@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <!-- boostrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-size: 16px; }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        p { margin: 0;}
+        a { text-decoration: none; color: black;}
+        ul { list-style-type: none;}
+
+        .logo { width: 80px;}
+        
+        header {
+            padding: 0.5rem 0;
+            background-color: #f5f5f5;
+        }
+        .so1 { 
+            max-width: 1100px; margin: auto;
+            display: flex;
+            justify-content: space-between;
+         }
+         nav { display: flex;
+            align-items: center;
+            margin-right: 10rem;
+
+         }
+
+        .ull { 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+             }
+        .ull li { 
+            margin: 0 8px;
+            padding: 4px;
+            position: relative;
+           
+
+        }
+        .ull li a { 
+            font-size: 18px;
+            font-family: 'Oswald', sans-serif;
+            opacity: 83%;
+            padding-left: 8px;
+
+        }
+
+        .ull li:hover .andanh {
+            opacity:1;
+            height: 200px;
+            z-index: 99;
+             
+        }
+
+        .andanh li a {
+            font-size: 18px;
+            font-family: 'Oswald', sans-serif;
+            opacity: 83%;
+            padding-left: 0px;
+
+        }
+        .andanh {
+            opacity:0;
+            width: 150px;
+            height: 0;
+            overflow: hidden;
+            transition: all .3s ease .15s;
+
+            background-color: #fafafa;
+            position: absolute;
+            
+            top:35px;
+            
+
+            
+        }
+        .andanh li { 
+            margin: 0;
+            padding: 4px 8px;
+            
+        }
+        .andanh li:hover {
+            background-color:#f5f5f5 ;
+            text-decoration: underline;
+        }
+      
+        
+        .logo1 { text-align: center; font-size: 32px; color: #1a237e;font-weight: bold;}
+
+        /* phan 2 */
+        .anh1 { width: 100%;height: 660px !important; object-fit: cover; }
+        .tieude { font-family: 'Oswald', sans-serif; color: #fff; 
+        text-align: center;
+        font-size: 48px ;
+        margin-bottom: 3rem;
+        }
+        .tieude1 { text-align: center; color: #fff; }
+        .tieude0 {
+            
+            background: rgb(0 0 35 / 54%);
+            max-width: 900px;
+            
+            padding: 6rem;
+            border: 2rem solid rgb(232 225 225 / 41%);
+            visibility: inherit;
+            /* position */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%)
+            
+        }
+        .anh11 {  position: relative;}
+
+        /* cauroshel */
+        /* PHAN 3 */
+        
+        .hh2 {
+            text-align: center;
+            font-family:  'Oswald', sans-serif;
+            background-color: rgb(22,20,46);
+            color: #fff;
+            margin: 0;
+            padding: 3rem;
+        }
+        .cla_font{ font-family: 'Open Sans', sans-serif;}
+        .cla_font2{ font-family: 'Oswald', sans-serif;}
+        .cla_wite { color: #fff; font-size: 17px;line-height: 24px;margin-bottom: 10px;}
+        .hh3 {  text-align: center; font-size: 30px; line-height: 33px;}
+        .p3_img { width: 950px; height: 640px; object-fit: cover;}
+        .p3_anh { max-width: 950px;}
+        .responsive {
+            width: 100%;
+            max-height: 640px;
+            }
+        .p3 { 
+            display: flex;
+            background-image: url(Huy-TAND-Toi-cao-moi-1-JPG.jpg);
+            }
+        .p3_p1 { 
+            background-color: rgb(24,26,38);
+            opacity: 97%;
+            width: 100%;
+            
+        }
+        .p3_p11 { max-width: 500px;
+        padding-left: 64px;
+        }
+
+        /* phan 4 */
+
+        .p4_h33 {
+            margin-top: 28px;
+            margin-bottom: 28px;
+                
+                font-weight: bold;
+                font-size: 30px;
+}
+        
+
+        .caontai { max-width: 1100px; margin: auto;  display: flex;}
+        .p4_p2 {
+            width: 380px;
+            height: 250px;
+            
+            display: flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+        
+            }
+            .p4_p2a {  background: rgba(153, 96, 76, 0.8); }
+            .p4_p2b {  background: rgba(0, 0, 0, 0.8) }
+            .p4_p2c {  background: rgba(89, 89, 89, 0.8); }
+
+        .p4_h3 {    
+            margin: 0;
+     font-family: "oswald", fira sans, sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    text-shadow: 2px 2px 2px #000;
+    color: #fff;
+
+    text-align: center;
+            vertical-align: middle;
+            line-height: 90px;     
+           
+    }
+            .p4_p1 { 
+                 
+            background-repeat: no-repeat;
+            width: 380px;
+            height: 250px;
+
+       
+           
+            }
+
+            .p4_p1a {
+                background-image: url(card1.jpg) ;  }
+            .p4_p1b {
+                background-image: url(dansu.jpg) ;  }
+            .p4_p1c {
+                background-image: url(honnhan.jpg) ;  }
+            
+            /* .p4_p5 { display: none;} */
+            .p4_a { 
+                font-size: 17px;
+                line-height: 40px;
+                text-decoration: none;
+                margin: 10px;
+                width: 100%;
+                text-align: center;
+                }
+
+        .p4_a2 {
+            border: 1px solid #fff;
+    width: 70%;
+    margin: 20px auto 0;
+    border-radius: 3px;
+    padding: 1.5rem 7rem;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+
+    transition: all .3s ease .15s;
+    
+        }
+
+        .p4_p2a:hover {  background: rgb(153 96 76 / 0%) !important; }
+        .p4_p2b:hover {  background: rgb(0 0 0 / 0%) !important; }
+        .p4_p2c:hover {  background: rgb(89 89 89 / 0%) !important; }
+        #a  { 
+            opacity:0;
+            width: 150px;
+            height: 0;
+            overflow: hidden;
+            transition: all .3s ease .15s;
+            color: black;
+
+        }
+        .p4_p2:hover #a {   
+            opacity:1;
+            height: 200px;
+            z-index: 99;
+            
+            color: white !important;
+             background-color:black !important ;
+             text-decoration: none !important;
+            }
+
+      /* phan 5 */
+      .p5 { margin-top: 20px;}
+
+      .p5_p1a {
+                background-image: url(muaban.jpg) ;  }
+            .p5_p1b {
+                background-image: url(datdai.jpg) ;  }
+            .p5_p1c {
+                background-image: url(kinhte.jpg) ;  }
+
+        /* phan 6 */
+        .conteniu {
+            background-image: linear-gradient(to bottom right, #036,#000);
+    background-position: left top;
+    background-repeat: repeat;
+    border-top-style: none;
+    border-bottom-style: none;
+
+    padding: 80px 0;
+    margin-top: 40px;
+}
+        .p6 { max-width: 1100px; margin: auto;
+            display: flex;
+         }
+        .p6_p1 { max-width: 510px; padding:  0px 30px;}
+        .p6_p1 h3 { 
+           
+            color: #E6FFFF;
+            text-transform: uppercase;
+            font-family: oswald, open sans, sans;
+            margin: 0;
+            font-size: 1.7em;
+            font-weight: 400;
+            line-height: 1em;
+}
+        
+
+        .p6_anh { padding-left: 15px;}
+        .p6_img { object-fit: cover; height: 400px; margin-top: 16px;}
+        .p6_font {
+            font-size: 16px;
+            margin: 0.5em 0 1.5em 0;
+            line-height: 1.6em;
+            color: #fff;
+        }
+
+        .p6_a {
+            margin: 9px 0px 15px 0px;
+            background: #006699;
+            color: #fff;
+            text-transform: uppercase;
+            border-radius: 0;
+            padding: 6px 24px;
+            text-align: center;
+            font-size: 14px;
+            
+        }
+        
+        .p6_a:hover { background-color:#003399 !important; color: #fff !important ; text-decoration: none !important;}
+        /* phan 7 */
+
+        .boddy { 
+            align-items: center;
+	
+	 display: flex;
+	 
+	 justify-content: center;
+     max-width: 1100px; margin: auto;
+        }
+
+        @keyframes scroll {
+	 0% {
+		 transform: translateX(0);
+	}
+	 100% {
+		 transform: translateX(calc(-250px * 4));
+	}
+}
+ .slider {
+	 background: white;
+	 
+	 height: 100px;
+	 margin: auto;
+	 overflow: hidden;
+	 position: relative;
+	 
+}
+
+ .slider::after {
+	 right: 0;
+	 top: 0;
+	 transform: rotateZ(180deg);
+}
+ .slider::before {
+	 left: 0;
+	 top: 0;
+}
+ .slider .slide-track {
+	 animation: scroll 40s linear infinite;
+	 display: flex;
+	 width: calc(250px * 8);
+}
+ .slider .slide {
+	 height: 100px;
+	 width: 250px;
+}
+ 
+ .p7_anh {object-fit: cover;}
+
+ /* phan 8 */
+
+ footer { 
+     background: black;
+     margin-top: 87px;
+    
+     
+ }
+ .p8_font {
+      color: #fff;
+      text-transform :uppercase;
+      font-size: 14px;
+      font-family: 'Open Sans', sans-serif;
+ }
+ .p8_fonth3 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 0 0 15px 0;
+ }
+
+ .p8 {
+    
+    
+   
+    padding-top: 30px;
+    padding-bottom: 20px;
+ }
+ .p8_0 {
+     display: flex;
+     max-width: 1100px; margin: auto;
+     justify-content: space-between;
+ }
+
+    </style>
+
+
+</head>
+<body>
+  <header>
+      <div class="so1">
+          <div>
+              <img class="logo" src="logo2.svg" alt="">
+              <a class="logo1" href="#">  DHG group </a>
+          </div>
+          <nav>
+              <ul class="ull">
+                  <li><a href="#">Trang Chủ</a></li>
+                  <li>
+                      <a id="a1" href="#">Giới Thiệu <span class="caret"></span>  </a>
+                      <ul class="andanh">
+                          <li><a href="#"> Về Chúng Tôi </a></li>
+                          <li><a href="#"> Vụ Việc  </a></li>
+                          <li><a href="#"> Việc Làm  </a></li>
+                      </ul>
+                </li>
+                  <li>
+                      <a href="#">Luật Sư <span class="caret"></span></a>
+                      <ul class="andanh">
+                        <li><a href="#"> Nguyễn Đại Hội </a></li>
+                        <li><a href="#"> Vũ Huy Khang  </a></li>
+                        <li><a href="#"> Trần Văn Độ  </a></li>
+                        <li><a href="#"> Lê Thị Thu  </a></li>
+                        <li><a href="#"> Vũ Thu Linh  </a></li>
+                    </ul>
+                </li>
+                  <li>
+                      <a href="#">Dịch Vụ <span class="caret"></span></a>
+                      <ul class="andanh">
+                        <li><a href="#"> Luật Hình Sự </a></li>
+                        <li><a href="#"> Luật Hôn Nhân  </a></li>
+                        <li><a href="#"> Luật Đất Đai </a></li>
+                        <li><a href="#"> Tranh Chấp Dân Sự  </a></li>
+                        <li><a href="#"> Hợp Đồng Kinh tế  </a></li>
+                    </ul>
+                    </li>
+                  <li><a href="#">Tin Tức</a></li>
+                  <li><a href="#">Liên Hệ</a></li>
+              </ul>
+          </nav>
+
+      </div>
+
+
+  </header>
+  <!-- slide show -->
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+    <div class="anh11  carousel-inner  " >
+        <div class="item active">
+            <img class="anh1 " src="daihoi4.jpg" alt="">
+        </div>
+        
+        <div class="item ">
+            <img class="anh1 " src="daihoi1.jpg" alt="">
+        </div>
+      
+        <div class="item">
+            <img class="anh1 item " src="daihoi2.jpg" alt="">
+        </div>
+        
+        <div class="tieude0">
+            <h1 class="tieude"> Sâu sắc về pháp lý, lời khuyên đáng tin cậy </h1>
+            <p class="tieude1"> DHG Group</p>
+        </div>
+        <!-- dieu khien -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+    </div>
+    
+    
+  </div>
+
+  <!-- phan3 -->
+
+  <div>
+      <h2 class="hh2">Chiến Thắng Pháp Lý Đã Giúp Khách Hàng Tiết Kiệm Hàng Tỉ Đồng </h2>
+  </div>
+
+    <div class="p3">
+        <div class="p3_anh">
+            <img class="p3_img responsive" src="IMG_0359.JPG" alt="none">
+        </div>
+        <div class="p3_p1">
+            <div class="p3_p11">
+                <h3 class="cla_font hh3 cla_wite">Đội Ngũ Luật Sư DHG</h3>
+                <hr >
+                <p class="cla_font cla_wite">
+                    Tại DHG group, chúng tôi tận tâm mang đến cho khách hàng cơ hội tốt nhất để họ đạt được kết quả tích cực. Trong hơn 5 năm, chúng tôi đã thành công rực rỡ khi giúp đỡ khách hàng cả trong và ngoài phòng xử án. Các luật sư của chúng tôi cam kết hoàn thành xuất sắc các lĩnh vực luật hình sự và tố tụng dân sự. 
+
+                </p>
+                
+                <p class="cla_font cla_wite">
+                    Chúng tôi đã chiến đấu và giành chiến thắng cho khách hàng trên khắp toàn quốc. Luật sư chính Nguyễn Đại Hội đã được trao giải Luật sư của năm  trong Tố tụng dân sự, cũng như được Hiệp hội Luật sư Hà Nội vinh danh là Luật sư xét xử của năm. Chúng tôi  tự hào trong việc giúp khách hàng của chúng tôi nhận được kết quả mà họ xứng đáng.
+                </p>
+                   
+                <p class="cla_font cla_wite">
+                    DHG là viết tắt của sự trung thực và chính trực trong đại diện thân chủ.Hãy để chúng tôi sẽ xem xét trường hợp của bạn và đưa ra đánh giá chính xác về việc chúng tôi có thể giúp bạn hay không. <br><br>
+                    Gọi <strong> 01697 937 228 </strong> ngay hôm nay hoặc liên hệ với chúng tôi trực tuyến để thảo luận về các nhu cầu pháp lý của bạn.
+                </p>
+                 
+                
+            </div>
+        </div>
+    </div>
+    <!-- Phan 4 -->
+    <center>
+
+        <h3 class="cla_font2 p4_h33">Dịch Vụ </h3>
+
+        
+    </center>
+    <div class="caontai"  >
+        <div class="p4_p1 p4_p1a" >
+            <div  class="p4_p2 p4_p2a ">
+                <h3 class="p4_h3  cla_wite">Hình Sự</h3>
+                <p class="p4_p5 p4_a" >
+                    <a id="a" class=" cla_wite p4_a2" href="#"> Xem Thêm</a>
+                  
+                </p>
+            </div>
+        </div>
+
+        <div class="p4_p1 p4_p1b ">
+            <div  class=" p4_p2 p4_p2b ">
+                <h3 class="p4_h3 cla_wite">Tranh Chấp Dân Sự</h3>
+                <p class="p4_p5 p4_a" >
+                    <a id="a" class="cla_wite p4_a2 " href="#"> Xem Thêm</a>
+                  
+                </p>
+            </div>
+        </div>
+
+        <div class="p4_p1 p4_p1c">
+            <div  class=" p4_p2 p4_p2c ">
+                <h3 class="p4_h3 cla_wite">Hôn NHân, Gia Đình</h3>
+                <p class="p4_p5 p4_a" >
+                    <a id="a" class="cla_wite p4_a2 " href="#"> Xem Thêm</a>
+                  
+                </p>
+            </div>
+        </div>
+    </div> 
+        
+    <div class="caontai p5"  >
+        <div class="p4_p1 p5_p1a" >
+            <div  class="p4_p2 p4_p2a ">
+                <h3 class="p4_h3  cla_wite">Mua Bán, Xác Nhập</h3>
+                <p class="p4_p5 p4_a" >
+                    <a id="a" class=" cla_wite p4_a2" href="#"> Xem Thêm</a>
+                  
+                </p>
+            </div>
+        </div>
+
+        <div class="p4_p1 p5_p1b ">
+            <div  class=" p4_p2 p4_p2b ">
+                <h3 class="p4_h3 cla_wite"> Dất Đai</h3>
+                <p class="p4_p5 p4_a" >
+                    <a id="a" class="cla_wite p4_a2 " href="#"> Xem Thêm</a>
+                  
+                </p>
+            </div>
+        </div>
+
+        <div class="p4_p1 p5_p1c">
+            <div  class=" p4_p2 p4_p2c ">
+                <h3 class="p4_h3 cla_wite">Hợp Đồng Kinh Tế</h3>
+                <p class="p4_p5 p4_a" >
+                    <a id="a" class="cla_wite p4_a2 " href="#"> Xem Thêm</a>
+                  
+                </p>
+            </div>
+        </div>
+    </div> 
+        
+<!-- phan 6 -->
+
+<div class="conteniu">
+    <div class="p6">
+        <div class="p6_p1">
+            <h3 class="cla_wite cla_font2 ">CÁCH CHÚNG TÔI  HỖ TRỢ  BẠN</h3>
+            <p class="cla_wite cla_font p6_font">Tại DHG group, luật sư của bạn sẽ làm việc trực tiếp với bạn trong suốt quá trình.</p>
+            <p class="cla_wite cla_font p6_font">Chúng tôi xử lý mọi trường hợp, từ các phiên tòa hình sự được công bố rộng rãi đến các kháng cáo dân sự và hình sự, với cùng một sự cống hiến cho dịch vụ cá nhân. Chúng tôi biết rằng phục vụ mọi khách hàng trong khả năng tốt nhất của chúng tôi là cơ sở cho tất cả thành công của chúng tôi</p>
+            <p class="cla_wite cla_font p6_font">Các luật sư và nhân viên của chúng tôi rất kín đáo. Nhiều vấn đề pháp lý được đưa ra cho chúng tôi là tế nhị. Tác động của tranh chấp hình sự hoặc dân sự đối với cuộc sống của bạn có thể rất nghiêm trọng. Chúng tôi sẽ bảo vệ lợi ích của bạn và giúp bạn tìm ra chiến lược phù hợp nhất với bạn.</p>
+            <p class="cla_wite cla_font "><a class="cla_wite cla_font p6_a" href="#"> Giới thiệu </a></p>
+
+        </div>
+        <div  class="p6_anh">
+            <img class="p6_img" src="toa_an.jpg" style="width: 100%; max-width: 530px;" alt="">
+        </div>
+    </div>
+</div>
+       
+<!-- phan7 -->
+<h3 class="cla_font2 p4_h33" style="text-align: center;"> Đối Tác</h3>
+<div class="boddy">
+    
+    
+    <div class="slider">
+        <div class="slide-track">
+          
+           
+            <div class="slide">
+                <img class="p7_anh" src="logokang.jpg" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img class="p7_anh" src="nhuadonga.gif" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img class="p7_anh" src="logohoaphat.jpg" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img class="p7_anh" src="LogoFPT.jpg" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img class="p7_anh" src="logo11.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img class="p7_anh" src="logo-vingroup.jpg" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img class="p7_anh" src="logo-honda.jpg" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img class="p7_anh" src="Logo_FLC_Group.svg" height="100" width="250" alt="" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="p8_0">
+        <div class="p8">
+            <h3 class="p8_fonth3"> Văn phòng</h3>
+            <p class="p8_font "> 11A PHỐ NGHĨA TÂN  <br>  Cầu giấy Hà Nội</p>
+        </div>
+        <div class="p8">
+            <h3 class="p8_fonth3 ">Liên Hệ</h3>
+            <p class="p8_font ">Số Điện Thoại: 0169 945 932</p>
+            <div>
+                <a href="#"><img src="" alt=""></a>
+                <a href="#"></a>
+                <a href="#"></a>
+            </div>
+        </div>
+
+    </div>
+    
+    <div style="max-width: 1100px; margin: auto;">
+        <hr>
+        <p style="text-align: center; color: white; font-size: 12px;">Bản quyền thuộc về DHG group</p>
+    
+    </div>
+  
+   
+</footer>
+</body>
+</html>
